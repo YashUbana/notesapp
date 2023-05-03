@@ -4,22 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="#E610141C"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_15ssp"
-        android:text="@string/notes"
+        android:fontFamily="@font/manrope_bold"
         android:paddingStart="@dimen/_10sdp"
         android:paddingTop="@dimen/_10sdp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/notes"
+        android:textColor="@color/ColorWhite"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toStartOf="@+id/lock"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:background="#E610141C"
+        android:src="@drawable/baseline_lock_24"
         app:layout_constraintEnd_toEndOf="parent"
-        android:fontFamily="@font/manrope_bold"
-        android:textColor="@color/ColorWhite"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SearchView
         android:layout_width="match_parent"

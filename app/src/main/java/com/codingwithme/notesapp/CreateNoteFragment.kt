@@ -128,6 +128,7 @@ class CreateNoteFragment : BaseFragment(),EasyPermissions.PermissionCallbacks,Ea
             if (noteId != -1){
                 updateNote()
             }else{
+
                 saveNote()
             }
         }
